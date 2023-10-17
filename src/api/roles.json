@@ -51,7 +51,7 @@
     "policies": [
       {
         "id": 2,
-        "type": "CRM",
+        "type": "API",
         "kind": "DENY",
         "path": [
           "/api/users",
