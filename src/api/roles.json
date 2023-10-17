@@ -1,0 +1,235 @@
+[
+  {
+    "id": 1,
+    "name": "Политика # 1",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/companies/search",
+          "/api/users/:id",
+          "/api/products",
+          "/api/companies/:id"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Политика # 2",
+    "policies": [
+      {
+        "id": 3,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/companies/search",
+          "/api/users/:id",
+          "/api/products",
+          "/api/companies/:id"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Политика # 3",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Политика # 4",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/products",
+          "/api/products/search",
+          "/api/users",
+          "/api/companies/:id",
+          "/api/products/:id"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Политика # 5",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/companies/search",
+          "/api/users/:id",
+          "/api/products",
+          "/api/companies/:id"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Политика # 6",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Политика # 7",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Политика # 8",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/products",
+          "/api/products/search",
+          "/api/users",
+          "/api/companies/:id",
+          "/api/products/:id"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/companies/:id"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Политика # 9",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Политика # 10",
+    "policies": [
+      {
+        "id": 2,
+        "type": "CRM",
+        "kind": "DENY",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id",
+          "/api/companies/search"
+        ]
+      }
+    ]
+  }
+]
