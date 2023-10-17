@@ -4,7 +4,7 @@
     "name": "Роль # 1",
     "policies": [
       {
-        "id": 2,
+        "id": 102,
         "type": "CRM",
         "kind": "ALLOW",
         "path": [
@@ -16,13 +16,36 @@
         ]
       },
       {
-        "id": 3,
+        "id": 103,
         "type": "CRM",
         "kind": "DENY",
         "path": [
           "/api/companies/search",
           "/api/users/:id",
           "/api/products",
+          "/api/companies/:id"
+        ]
+      },
+      {
+        "id": 202,
+        "type": "API",
+        "kind": "ALLOW",
+        "path": [
+          "/api/users",
+          "/api/products/search",
+          "/api/products/:id",
+          "/api/companies/:id"
+        ]
+      },
+      {
+        "id": 203,
+        "type": "API",
+        "kind": "DENY",
+        "path": [
+          "/api/companies/search",
+          "/api/users/:id",
+          "/api/products",
+          "/api/products/:id",
           "/api/companies/:id"
         ]
       }
@@ -33,12 +56,18 @@
     "name": "Роль # 2",
     "policies": [
       {
-        "id": 3,
+        "id": 104,
+        "type": "API",
+        "kind": "ALLOW",
+        "path": [
+          "/api/users/:id"
+        ]
+      },
+      {
+        "id": 105,
         "type": "CRM",
         "kind": "ALLOW",
         "path": [
-          "/api/companies/search",
-          "/api/users/:id",
           "/api/products",
           "/api/companies/:id"
         ]
@@ -50,15 +79,19 @@
     "name": "Роль # 3",
     "policies": [
       {
-        "id": 2,
+        "id": 106,
         "type": "API",
+        "kind": "ALLOW",
+        "path": [
+          "/api/users"
+        ]
+      },
+      {
+        "id": 107,
+        "type": "CRM",
         "kind": "DENY",
         "path": [
-          "/api/users",
-          "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/users"
         ]
       }
     ]
@@ -68,21 +101,38 @@
     "name": "Роль # 4",
     "policies": [
       {
-        "id": 2,
-        "type": "CRM",
+        "id": 108,
+        "type": "API",
         "kind": "ALLOW",
         "path": [
           "/api/users",
-          "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/products/search"
         ]
       },
       {
-        "id": 5,
+        "id": 109,
         "type": "CRM",
         "kind": "DENY",
+        "path": [
+          "/api/users"
+        ]
+      },
+      {
+        "id": 110,
+        "type": "API",
+        "kind": "ALLOW",
+        "path": [
+          "/api/products",
+          "/api/products/search",
+          "/api/users",
+          "/api/companies/:id",
+          "/api/products/:id"
+        ]
+      },
+      {
+        "id": 111,
+        "type": "CRM",
+        "kind": "ALLOW",
         "path": [
           "/api/products",
           "/api/products/search",
@@ -102,21 +152,8 @@
         "type": "CRM",
         "kind": "DENY",
         "path": [
-          "/api/users",
           "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
-        ]
-      },
-      {
-        "id": 3,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
           "/api/companies/search",
-          "/api/users/:id",
-          "/api/products",
           "/api/companies/:id"
         ]
       }
@@ -127,15 +164,21 @@
     "name": "Роль # 6",
     "policies": [
       {
-        "id": 2,
+        "id": 3,
         "type": "CRM",
+        "kind": "ALLOW",
+        "path": [
+          "/api/products",
+          "/api/companies/search",
+          "/api/companies/:id"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "API",
         "kind": "DENY",
         "path": [
-          "/api/users",
-          "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/companies/:id"
         ]
       }
     ]
@@ -147,13 +190,11 @@
       {
         "id": 2,
         "type": "CRM",
-        "kind": "ALLOW",
+        "kind": "DENY",
         "path": [
-          "/api/users",
           "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/companies/search",
+          "/api/companies/:id"
         ]
       }
     ]
@@ -167,28 +208,24 @@
         "type": "CRM",
         "kind": "DENY",
         "path": [
-          "/api/users",
           "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/companies/search",
+          "/api/companies/:id"
         ]
       },
       {
-        "id": 5,
+        "id": 3,
         "type": "CRM",
         "kind": "ALLOW",
         "path": [
           "/api/products",
-          "/api/products/search",
-          "/api/users",
-          "/api/companies/:id",
-          "/api/products/:id"
+          "/api/companies/search",
+          "/api/companies/:id"
         ]
       },
       {
         "id": 4,
-        "type": "CRM",
+        "type": "API",
         "kind": "DENY",
         "path": [
           "/api/companies/:id"
@@ -205,11 +242,9 @@
         "type": "CRM",
         "kind": "DENY",
         "path": [
-          "/api/users",
           "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/companies/search",
+          "/api/companies/:id"
         ]
       }
     ]
@@ -219,15 +254,13 @@
     "name": "Роль # 10",
     "policies": [
       {
-        "id": 2,
+        "id": 3,
         "type": "CRM",
         "kind": "ALLOW",
         "path": [
-          "/api/users",
-          "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
+          "/api/products",
+          "/api/companies/search",
+          "/api/companies/:id"
         ]
       }
     ]
