@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Политика # 1",
+    "name": "Роль # 1",
     "policies": [
       {
         "id": 2,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/users",
           "/api/products/search",
@@ -30,12 +30,12 @@
   },
   {
     "id": 2,
-    "name": "Политика # 2",
+    "name": "Роль # 2",
     "policies": [
       {
         "id": 3,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/companies/search",
           "/api/users/:id",
@@ -47,7 +47,7 @@
   },
   {
     "id": 3,
-    "name": "Политика # 3",
+    "name": "Роль # 3",
     "policies": [
       {
         "id": 2,
@@ -65,12 +65,12 @@
   },
   {
     "id": 4,
-    "name": "Политика # 4",
+    "name": "Роль # 4",
     "policies": [
       {
         "id": 2,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/users",
           "/api/products/search",
@@ -95,7 +95,7 @@
   },
   {
     "id": 5,
-    "name": "Политика # 5",
+    "name": "Роль # 5",
     "policies": [
       {
         "id": 2,
@@ -112,7 +112,7 @@
       {
         "id": 3,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/companies/search",
           "/api/users/:id",
@@ -124,7 +124,7 @@
   },
   {
     "id": 6,
-    "name": "Политика # 6",
+    "name": "Роль # 6",
     "policies": [
       {
         "id": 2,
@@ -142,12 +142,12 @@
   },
   {
     "id": 7,
-    "name": "Политика # 7",
+    "name": "Роль # 7",
     "policies": [
       {
         "id": 2,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/users",
           "/api/products/search",
@@ -160,7 +160,7 @@
   },
   {
     "id": 8,
-    "name": "Политика # 8",
+    "name": "Роль # 8",
     "policies": [
       {
         "id": 2,
@@ -177,7 +177,7 @@
       {
         "id": 5,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/products",
           "/api/products/search",
@@ -198,7 +198,7 @@
   },
   {
     "id": 9,
-    "name": "Политика # 9",
+    "name": "Роль # 9",
     "policies": [
       {
         "id": 2,
@@ -216,12 +216,12 @@
   },
   {
     "id": 10,
-    "name": "Политика # 10",
+    "name": "Роль # 10",
     "policies": [
       {
         "id": 2,
         "type": "CRM",
-        "kind": "DENY",
+        "kind": "ALLOW",
         "path": [
           "/api/users",
           "/api/products/search",
