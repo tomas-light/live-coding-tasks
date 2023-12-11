@@ -1,268 +1,111 @@
 [
   {
-    "id": 1,
-    "name": "Роль # 1",
-    "policies": [
-      {
-        "id": 102,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
-          "/api/users",
-          "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id",
-          "/api/companies/search"
-        ]
-      },
-      {
-        "id": 103,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/companies/search",
-          "/api/users/:id",
-          "/api/products",
-          "/api/companies/:id"
-        ]
-      },
-      {
-        "id": 202,
-        "type": "API",
-        "kind": "ALLOW",
-        "path": [
-          "/api/users",
-          "/api/products/search",
-          "/api/products/:id",
-          "/api/companies/:id"
-        ]
-      },
-      {
-        "id": 203,
-        "type": "API",
-        "kind": "DENY",
-        "path": [
-          "/api/companies/search",
-          "/api/users/:id",
-          "/api/products",
-          "/api/products/:id",
-          "/api/companies/:id"
-        ]
-      }
+    "id": "role_1",
+    "name": "Суперадмин",
+    "policyIds": [
+      "policy_1",
+      "policy_2",
+      "policy_3",
+      "policy_4",
+      "policy_5",
+      "policy_6"
     ]
   },
   {
-    "id": 2,
-    "name": "Роль # 2",
-    "policies": [
-      {
-        "id": 104,
-        "type": "API",
-        "kind": "ALLOW",
-        "path": [
-          "/api/users/:id"
-        ]
-      },
-      {
-        "id": 105,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
-          "/api/products",
-          "/api/companies/:id"
-        ]
-      }
+    "id": "role_2",
+    "name": "Администратор пользователей",
+    "policyIds": [
+      "policy_1",
+      "policy_4"
     ]
   },
   {
-    "id": 3,
-    "name": "Роль # 3",
-    "policies": [
-      {
-        "id": 106,
-        "type": "API",
-        "kind": "ALLOW",
-        "path": [
-          "/api/users"
-        ]
-      },
-      {
-        "id": 107,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/users"
-        ]
-      }
+    "id": "role_3",
+    "name": "Администратор продуктов",
+    "policyIds": [
+      "policy_2",
+      "policy_5"
     ]
   },
   {
-    "id": 4,
-    "name": "Роль # 4",
-    "policies": [
-      {
-        "id": 108,
-        "type": "API",
-        "kind": "ALLOW",
-        "path": [
-          "/api/users",
-          "/api/products/search"
-        ]
-      },
-      {
-        "id": 109,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/users"
-        ]
-      },
-      {
-        "id": 110,
-        "type": "API",
-        "kind": "ALLOW",
-        "path": [
-          "/api/products",
-          "/api/products/search",
-          "/api/users",
-          "/api/companies/:id",
-          "/api/products/:id"
-        ]
-      },
-      {
-        "id": 111,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
-          "/api/products",
-          "/api/products/search",
-          "/api/users",
-          "/api/companies/:id",
-          "/api/products/:id"
-        ]
-      }
+    "id": "role_4",
+    "name": "Администратор компаний",
+    "policyIds": [
+      "policy_3",
+      "policy_6"
     ]
   },
   {
-    "id": 5,
-    "name": "Роль # 5",
-    "policies": [
-      {
-        "id": 2,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/products/search",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      }
+    "id": "role_5",
+    "name": "Можно просматривать только списки всех сущностей",
+    "policyIds": [
+      // разрешили весь UI
+      "policy_1",
+      "policy_2",
+      "policy_3",
+      // разрешили все API
+      "policy_4",
+      "policy_5",
+      "policy_6",
+      // запретили на UI все, кроме просмотра списков
+      "policy_8",
+      "policy_9",
+      "policy_11",
+      "policy_12",
+      "policy_14",
+      "policy_15",
+      // запретили все API, кроме получения списков
+      "policy_17",
+      "policy_18",
+      "policy_20",
+      "policy_21",
+      "policy_23",
+      "policy_24"
     ]
   },
   {
-    "id": 6,
-    "name": "Роль # 6",
-    "policies": [
-      {
-        "id": 3,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
-          "/api/products",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      },
-      {
-        "id": 4,
-        "type": "API",
-        "kind": "DENY",
-        "path": [
-          "/api/companies/:id"
-        ]
-      }
+    "id": "role_6",
+    "name": "Можно просматривать только одного пользователя (своего)",
+    "policyIds": [
+      // разрешили UI и API для пользователей
+      "policy_1",
+      "policy_4",
+      // запретили на UI список пользователей и поиск
+      "policy_7",
+      "policy_8",
+      // запретили в API получения списка пользователей и поиск
+      "policy_16",
+      "policy_17"
     ]
   },
   {
-    "id": 7,
-    "name": "Роль # 7",
-    "policies": [
-      {
-        "id": 2,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/products/search",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      }
+    "id": "role_7",
+    "name": "Можно просматривать только один продукт (созданный текущим пользователем)",
+    "policyIds": [
+      // разрешили UI и API для продуктов
+      "policy_2",
+      "policy_5",
+      // запретили на UI список продуктов и поиск
+      "policy_10",
+      "policy_11",
+      // запретили в API получения списка продуктов и поиск
+      "policy_19",
+      "policy_20"
     ]
   },
   {
-    "id": 8,
-    "name": "Роль # 8",
-    "policies": [
-      {
-        "id": 2,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/products/search",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      },
-      {
-        "id": 3,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
-          "/api/products",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      },
-      {
-        "id": 4,
-        "type": "API",
-        "kind": "DENY",
-        "path": [
-          "/api/companies/:id"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Роль # 9",
-    "policies": [
-      {
-        "id": 2,
-        "type": "CRM",
-        "kind": "DENY",
-        "path": [
-          "/api/products/search",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Роль # 10",
-    "policies": [
-      {
-        "id": 3,
-        "type": "CRM",
-        "kind": "ALLOW",
-        "path": [
-          "/api/products",
-          "/api/companies/search",
-          "/api/companies/:id"
-        ]
-      }
+    "id": "role_8",
+    "name": "Можно просматривать только одну компанию (в которой работаешь)",
+    "policyIds": [
+      // разрешили UI и API для компаний
+      "policy_3",
+      "policy_6",
+      // запретили на UI список компаний и поиск
+      "policy_13",
+      "policy_14",
+      // запретили в API получения списка компаний и поиск
+      "policy_22",
+      "policy_23"
     ]
   }
 ]
